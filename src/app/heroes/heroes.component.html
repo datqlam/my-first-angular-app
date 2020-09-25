@@ -16,6 +16,10 @@
     <a routerLink="/detail/{{hero.id}}">
       <span class="badge">{{hero.id}}</span> {{hero.name}}
     </a>
+    <!-- The binding conveys information about the event.
+    This information can include data values such as an event object, string, or number named $event. -->
+    <!-- If the target event is a native DOM element event,
+    then $event is a DOM event object, with properties such as target and target.value. -->
     <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
   </li>
 </ul>
